@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "landing/voterSearch.jsx", "landing/hardWorkSection.jsx"  ],
   "exclude": ["node_modules"]
 }
