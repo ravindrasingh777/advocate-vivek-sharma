@@ -11,7 +11,7 @@ export default function HeroSection() {
           <div className="relative rounded-2xl overflow-hidden border-4 border-[#f59e0b] shadow-xl w-[280px] sm:w-[320px] md:w-[380px] lg:w-[420px]">
             {/* Image */}
             <Image
-              src="/mainbanner.png"
+              src="/mainbanner.jpeg"
               alt="profile"
               width={500}
               height={600}

@@ -9,7 +9,7 @@ const images = [
   "/gallery3.jpeg",
   "/gallery4.jpeg",
   "/gallery5.jpeg",
-  "/gallery6.png",
+  "/gallery6.jpeg",
   "/gallery7.jpeg",
 ];
 
