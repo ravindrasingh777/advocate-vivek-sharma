@@ -37,7 +37,7 @@ export default function MustViewedSection() {
             Must Watch Video
           </h2>
           <p className="mt-2 text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-           इस वीडियो को मिस मत कीजिए — यह आपको अधिवक्ता सुरक्षा से जुड़ी पूरी जानकारी आसान और स्पष्ट तरीके से समझाएगा।
+           We Demand Advocate Protection Act
           </p>
         </div>
 
