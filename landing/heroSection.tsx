@@ -19,8 +19,7 @@ export default function HeroSection() {
               className="object-cover w-full h-full"
             />
 
-            {/* Bottom Gradient Overlay */}
-            <div className="absolute bottom-0 left-0 w-full h-28 bg-gradient-to-t from-[#1e4d8f] to-transparent" />
+           
 
             {/* Name */}
             {/* <div className="absolute bottom-4 w-full text-center">
@@ -37,9 +36,9 @@ export default function HeroSection() {
         {/* RIGHT CONTENT */}
         <div className="flex flex-col gap-3">
           {/* Tag */}
-          <div className="w-full bg-[#3b0d2f] text-white text-xs px-4 py-2 rounded-full ">
+          {/* <div className="w-full bg-[#3b0d2f] text-white text-xs px-4 py-2 rounded-full ">
             🏛️ Bar Council of Rajasthan Election 2026 — सदस्य पद
-          </div>
+          </div> */}
 
           {/* Title */}
           <div className="w-full flex items-center justify-between">
@@ -64,9 +63,9 @@ export default function HeroSection() {
 
           {/* Description Box */}
           <div className="bg-gray-100 border-l-4 border-[#1e4d8f] p-4 rounded-md text-sm text-gray-700 leading-relaxed">
-            समस्त आदरणीय अधिवक्ता साथियों से विनम्र निवेदन है कि मैं, विवेक
-            शर्मा (एडवोकेट), बार काउंसिल ऑफ राजस्थान के आगामी चुनाव में सदस्य पद
-            हेतु प्रत्याशी हूँ। <span className="font-bold">मेरा बैलेट नम्बर 192</span> है। आप सभी से निवेदन है
+            समस्त आदरणीय अधिवक्ता साथियों से विनम्र निवेदन है कि मैं, <span className="text-[#1e4d8f] font-bold">विवेक
+            शर्मा (एडवोकेट)</span>, बार काउंसिल ऑफ राजस्थान के आगामी चुनाव में सदस्य पद
+            हेतु प्रत्याशी हूँ। <span className="text-[#1e4d8f] font-bold">मेरा बैलेट नम्बर 192</span> है। आप सभी से निवेदन है
             कि अपना प्रथम / उच्च वरीयता का वोट एवं समर्थन देकर मुझे विजयी बनाने
             की कृपा करें, मैं आपका सदैव आभारी रहूँगा।
           </div>

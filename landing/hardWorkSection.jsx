@@ -8,30 +8,30 @@ const galleryItems = [
   {
     id: 1,
     type: "video",
-    src: "/vedeo3.mp4",
+    src: "/vedeo5.mp4",
     title: "न्याय के लिए आंदोलन",
     desc: "अधिवक्ता समाज के अधिकारों के लिए संघर्ष",
   },
-  {
-    id: 2,
-    type: "video",
-    src: "/vedeo4.mp4",
-    title: "संसद में मुद्दा उठाया गया",
-    desc: "अधिवक्ता समाज के हितों को लेकर इस व्यक्ति का मुद्दा संसद में प्रमुखता से उठाया गया",
-  },
+  // {
+  //   id: 2,
+  //   type: "video",
+  //   src: "/vedeo4.mp4",
+  //   title: "संसद में मुद्दा उठाया गया",
+  //   desc: "अधिवक्ता समाज के हितों को लेकर इस व्यक्ति का मुद्दा संसद में प्रमुखता से उठाया गया",
+  // },
 
-  {
-    id: 3,
-    type: "video",
-    src: "/vedeo2.mp4",
-    title: "साथियों के साथ",
-  },
-  {
-    id: 4,
-    type: "image",
-    src: gallery2,
-    title: "वयस्कों के लिए मार्गदर्शन",
-  },
+  // {
+  //   id: 3,
+  //   type: "video",
+  //   src: "/vedeo2.mp4",
+  //   title: "साथियों के साथ",
+  // },
+  // {
+  //   id: 4,
+  //   type: "image",
+  //   src: gallery2,
+  //   title: "वयस्कों के लिए मार्गदर्शन",
+  // },
 ];
 
 const quotes = [
@@ -83,7 +83,7 @@ export default function HardworkSection() {
                 transition duration-300
                 ${
                   isMobile
-                    ? "h-[220px]"
+                    ? "h-[500px]"
                     : index === 0
                       ? "col-span-12 md:col-span-8 row-span-2"
                       : "col-span-12 md:col-span-4"
@@ -95,6 +95,9 @@ export default function HardworkSection() {
                 <video
                   src={item.src}
                   controls
+                  autoPlay
+                  muted
+                  loop
                   className="w-full h-full object-cover"
                 />
               ) : (
@@ -106,20 +109,24 @@ export default function HardworkSection() {
               )}
 
               {/* OVERLAY */}
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              {/* <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
                 <h4 className="text-sm font-bold text-white">{item.title}</h4>
 
                 {item.desc && (
                   <p className="text-xs text-white/80">{item.desc}</p>
                 )}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
 
         {/* 🔥 QUOTE */}
         <div className="bg-white/10 border border-white/20 border-l-4 border-white rounded-lg p-5 max-w-2xl w-full backdrop-blur-md">
-          <span className="text-3xl text-white font-serif">"</span>
+          {/* <span className="text-3xl text-white font-serif">"</span> */}
+
+          <div className="w-full h-44 overflow-hidden   mb-4">
+            <img src="/voterMarketing.jpeg" alt="advVivek" className="object-cover rounded-md" />
+          </div>
 
           <p className="text-sm text-white/90 italic leading-relaxed">
             {quotes[0]}

@@ -46,6 +46,16 @@ export default function SocialCarousel() {
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-6">
+
+         <div className="text-center mb-8">
+          <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-[#1e4d8f]">
+            प्रचार अभियान — पोस्टर व वीडियो
+          </h2>
+          <p className="mt-2 text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
+            चुनाव प्रचार के दौरान ली गई कुछ तस्वीरें और वीडियो।
+          </p>
+          
+        </div>
      
       {/* 🔥 CAROUSEL */}
       <div

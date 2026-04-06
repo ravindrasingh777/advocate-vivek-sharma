@@ -7,7 +7,9 @@ import SocialCarousel from "@/landing/socialCarousel";
 import About from "@/landing/aboutSection";
 import Carousel from "@/landing/carousel";
 import ContactSection from "@/landing/contactSection";
+import MustViewedSection from "@/landing/mustViewedSection";
 import TopMarquee from "@/landing/topMarquee";
+import WhatsappJoinSection from "@/landing/whatsappJoinSection";
 import Footer from "@/landing/footer";
 
 const Page = () => {
@@ -18,10 +20,12 @@ const Page = () => {
       <HeroSection />
       <VoterSearch />
       <HardworkSection />
+      <MustViewedSection />
       <SocialCarousel/>
       <CommitmentSection />
       <About />
       <Carousel />
+      <WhatsappJoinSection />
       <ContactSection />
       <Footer />
     </>
