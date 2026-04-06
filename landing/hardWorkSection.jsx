@@ -8,18 +8,26 @@ const galleryItems = [
   {
     id: 1,
     type: "video",
-    src: "/vedeo.mp4",
+    src: "/vedeo3.mp4",
     title: "न्याय के लिए आंदोलन",
     desc: "अधिवक्ता समाज के अधिकारों के लिए संघर्ष",
   },
   {
     id: 2,
     type: "video",
+    src: "/vedeo4.mp4",
+    title: "संसद में मुद्दा उठाया गया",
+    desc: "अधिवक्ता समाज के हितों को लेकर इस व्यक्ति का मुद्दा संसद में प्रमुखता से उठाया गया",
+  },
+
+  {
+    id: 3,
+    type: "video",
     src: "/vedeo2.mp4",
     title: "साथियों के साथ",
   },
   {
-    id: 3,
+    id: 4,
     type: "image",
     src: gallery2,
     title: "वयस्कों के लिए मार्गदर्शन",

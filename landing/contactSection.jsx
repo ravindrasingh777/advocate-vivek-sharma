@@ -46,7 +46,7 @@ export default function ContactSection() {
             </a>
 
             <a
-              href="https://wa.me/919351870075"
+              href="https://chat.whatsapp.com/FdJGdP3zG3nGpZi41z5Y1T?mode=gi_t"
               target="_blank"
               className="flex items-center justify-center gap-2 border border-[#1e4d8f] text-[#1e4d8f] px-6 py-3 rounded-lg font-medium hover:bg-[#1e4d8f] hover:text-white transition w-full sm:w-auto"
             >

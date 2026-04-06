@@ -15,13 +15,13 @@ const navLinks: NavLink[] = [
   { name: "परिचय", id: "about" },
   { name: "संकल्प", id: "vision" },
   { name: "संघर्ष", id: "hardwork" },
-  // { name: "गैलरी", route: "/gallery" },
+  { name: "गैलरी", route: "/gallery" },
   { name: "संपर्क", id: "contact" },
 ];
 
 export function TypingText() {
   return (
-    <span className="font-bold text-lg sm:text-xl text-[#1e4d8f] leading-tight">
+    <span className="font-bold text-xl text-[#1e4d8f] leading-tight">
       <ReactTyped
         strings={["Adv. Vivek Sharma"]}
         typeSpeed={60}

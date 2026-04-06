@@ -37,12 +37,15 @@ export default function VoterSearch() {
         <h2 className="text-xl sm:text-2xl font-extrabold text-center text-gray-900">
           मतदाता सूची में अपना नाम खोजें
         </h2>
+        <h4 className="text-sm font-semibold text-center text-gray-900">
+          BCR Preliminary Electoral Roll 2026 — Search by Name or Enrolment Number.
+        </h4>
 
         {/* Search */}
         <div className="flex w-full rounded-lg overflow-hidden shadow-md border">
           <input
             type="text"
-            placeholder="नाम या रोल नंबर डालें..."
+            placeholder="🔍 अपना नाम या Enrolment Number यहाँ टाइप करें..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSearch()}
@@ -137,7 +140,7 @@ export default function VoterSearch() {
               {/* Banner */}
               <div className="bg-white rounded-xl p-4 shadow-md border">
                 <img
-                  src="/voterMarketing.jpeg"
+                  src="/votingsuggestion.jpeg"
                   alt="banner"
                   className="w-full h-[180px] object-cover object-top"
                 />

@@ -9,7 +9,7 @@ export default function Footer() {
     { name: "होम", id: "home" },
     { name: "परिचय", id: "about" },
     { name: "संकल्प", id: "vision" },
-    // { name: "गैलरी", route: "/gallery" },
+    { name: "गैलरी", route: "/gallery" },
     { name: "संपर्क", id: "contact" },
   ];
 

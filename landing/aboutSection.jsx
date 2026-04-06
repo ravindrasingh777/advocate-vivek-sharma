@@ -3,7 +3,6 @@
 import aboutImage from "@/public/aboutUs.jpeg";
 
 const bioPoints = [
-  "Advocate at Rajasthan High Court, Jaipur",
   "Candidate for Member, Bar Council of Rajasthan 2026",
   "Dedicated to upholding the dignity and traditions of the legal fraternity",
   "Actively working for the rights, welfare, and unity of advocates",
@@ -17,11 +16,11 @@ export default function AboutSection() {
     <section id="about" className="bg-[#f8f5f0] py-10 px-4 border-b">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* LEFT IMAGE */}
-        <div className="flex justify-center">
+        <div className="flex col-span-1 justify-center items-center">
           <img
             src={aboutImage.src}
             alt="Election Banner"
-            className="w-full max-w-xs sm:max-w-sm rounded-xl shadow-lg object-cover"
+            className="w-full  rounded-xl shadow-lg object-cover"
           />
         </div>
 

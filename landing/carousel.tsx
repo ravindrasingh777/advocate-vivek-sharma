@@ -83,7 +83,7 @@ export default function Carousel() {
               <img
                 src={img}
                 alt="slide"
-                className="w-full h-[250px] sm:h-[280px] md:h-[300px] object-cover"
+                className="w-full h-[370px] md:h-[400px] object-cover"
               />
             </div>
           </div>
