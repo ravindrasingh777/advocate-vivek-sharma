@@ -8,7 +8,7 @@ const galleryItems = [
   {
     id: 1,
     type: "video",
-    src: "/vedeo5.mp4",
+    src: "/vedeo5.MP4",
     title: "न्याय के लिए आंदोलन",
     desc: "अधिवक्ता समाज के अधिकारों के लिए संघर्ष",
   },
