@@ -77,7 +77,7 @@ export default function HeroSection() {
               📍 एफ-6, ज्योति मार्ग, नीरज यूनिवर्सिटी मार्ग, बापू नगर,
               जयपुर-302015
             </p> */}
-            <p className="text-blue-600">📞 +91 9257061112</p>
+            <p className="text-blue-600">📞 +91 9829462535</p>
             {/* <p className="text-blue-600">✉️ suranalawchamber@gmail.com</p>
             <p className="text-blue-600">🌐 suranalawchamber.com/home/</p> */}
           </div>
