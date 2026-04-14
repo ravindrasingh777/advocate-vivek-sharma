@@ -32,13 +32,13 @@ export default function ContactSection() {
 
             <h3 className="font-semibold text-lg text-[#1e4d8f]">कॉल करें</h3>
 
-            <p className="text-gray-600 text-sm">9257061112 / 9351870075</p>
+            <p className="text-gray-600 text-sm">9829462535 / 9351870075</p>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
             <a
-              href="tel:9257061112"
+              href="tel:9829462535"
               className="flex items-center justify-center gap-2 bg-[#1e4d8f] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#163a6b] transition w-full sm:w-auto"
             >
               <Phone size={18} />
@@ -46,7 +46,7 @@ export default function ContactSection() {
             </a>
 
             <a
-              href="https://chat.whatsapp.com/FdJGdP3zG3nGpZi41z5Y1T?mode=gi_t"
+              href="https://api.whatsapp.com/send/?phone=%2B919351870075&text&type=phone_number&app_absent=0"
               target="_blank"
               className="flex items-center justify-center gap-2 border border-[#1e4d8f] text-[#1e4d8f] px-6 py-3 rounded-lg font-medium hover:bg-[#1e4d8f] hover:text-white transition w-full sm:w-auto"
             >
