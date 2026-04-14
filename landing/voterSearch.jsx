@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import data from "@/public/All_Data.json";
+import data from "@/public/VANSH_WEBSITE.json";
 import { ArrowDown } from "lucide-react";
 
 export default function VoterSearch() {
@@ -10,20 +10,37 @@ export default function VoterSearch() {
   const [searched, setSearched] = useState(false);
   const [visibleCount, setVisibleCount] = useState(10);
 
-  const allVoters = data.rows || [];
+  const allVoters = data?.data || [];
 
-  const handleSearch = () => {
-    if (!query.trim()) return;
+  // const handleSearch = () => {
+  //   if (!query.trim()) return;
 
-    const filtered = allVoters.filter(
-      (voter) =>
-        (voter["Name as on the Roll"] || "")
-          .toLowerCase()
-          .includes(query.toLowerCase()) ||
-        (voter["Number on the Roll"] || "")
-          .toLowerCase()
-          .includes(query.toLowerCase()),
-    );
+  //   const filtered = allVoters.filter(
+  //     (voter) =>
+  //       (voter["Name as on the Roll"] || "")
+  //         .toLowerCase()
+  //         .includes(query.toLowerCase()) ||
+  //       (voter["Number on the Roll"] || "")
+  //         .toLowerCase()
+  //         .includes(query.toLowerCase()),
+  //   );
+
+  //   setResults(filtered);
+  //   setVisibleCount(10);
+  //   setSearched(true);
+  // };
+
+const handleSearch = () => {
+    const q = query.trim().toLowerCase();
+    if (!q) return;
+
+    const filtered = allVoters.filter((voter) => {
+      return (
+        voter.NAME?.toLowerCase().includes(q) ||
+        voter["Enrollment No"]?.toLowerCase().includes(q) ||
+        String(voter["Electoral Number"]).includes(q)
+      );
+    });
 
     setResults(filtered);
     setVisibleCount(10);
@@ -82,7 +99,8 @@ export default function VoterSearch() {
                   className="bg-white rounded-xl p-4 shadow-md border hover:shadow-lg transition"
                 >
                   <h3 className="text-base font-bold text-gray-800 mb-2">
-                    {voter["Name as on the Roll"]}
+                    {/* {voter["Name as on the Roll"]} */}
+                    {voter.NAME}
                   </h3>
 
                   <div className="grid  grid-cols-[1fr_auto] gap-4 text-sm text-gray-600">
@@ -92,13 +110,15 @@ export default function VoterSearch() {
                         <span className="font-semibold text-black">
                           Roll No:
                         </span>{" "}
-                        {voter["Number on the Roll"]}
+                        {/* {voter["Number on the Roll"]} */}
+                        {voter["Enrollment No"]}
                       </p>
 
                       <p>
                         <span className="font-semibold text-black">
                           Electoral No:
                         </span>{" "}
+                        {/* {voter["Electoral Number"]} */}
                         {voter["Electoral Number"]}
                       </p>
 
@@ -106,20 +126,22 @@ export default function VoterSearch() {
                         <span className="font-semibold text-black">
                           Judgship:
                         </span>{" "}
-                        {voter["Judgship"]}
+                        {/* {voter["Judgship"]} */}
+                        {voter["Judgeship_x"]}
                       </p>
 
                       <p>
                         <span className="font-semibold text-black">Bar:</span>{" "}
-                        {voter["Bar Association"]}
+                        {/* {voter["Bar Association"]} */}
+                        {voter["Bar Association_x"]}
                       </p>
 
-                      <p>
+                      {/* <p>
                         <span className="font-semibold text-black">
                           Enrolled:
                         </span>{" "}
                         {voter["Date of Enrolment"]}
-                      </p>
+                      </p> */}
 
                       <p className="text-red-500 text-xs">
                         Note:- Vote For Adv. Vivek Sharma
