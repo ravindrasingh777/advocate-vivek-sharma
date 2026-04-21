@@ -131,7 +131,7 @@ const handleSearch = () => {
                       </p>
 
                       <p>
-                        <span className="font-semibold text-black">Bar:</span>{" "}
+                        <span className="font-semibold text-black">Polling Booth:</span>{" "}
                         {/* {voter["Bar Association"]} */}
                         {voter["Bar Association_x"]}
                       </p>
