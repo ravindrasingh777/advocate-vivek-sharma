@@ -16,12 +16,12 @@ const Page = () => {
   return (
     <>
       <Navbar />
-      <TopMarquee/>
+      <TopMarquee />
       <HeroSection />
       <VoterSearch />
-      <HardworkSection />
+      {/* <HardworkSection /> */}
       <MustViewedSection />
-      <SocialCarousel/>
+      <SocialCarousel />
       <CommitmentSection />
       <About />
       <Carousel />
